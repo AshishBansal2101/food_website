@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar_height:59px;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+#logo
+{
+    margin:23px 12px;
+}
+#logo img{
+    height: 61px;
+    width: 74px;
+    margin: -15px 26px;
+    border-radius: 100%;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a
+{   display: block;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-radius:10px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#navbar ul li a:hover
+{   display: block;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-radius:15px;
+    color:black;
+    background-color: white;
+}
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    align-items: center;
+    justify-content: center;
+    height: 390px;
+}
+#home::before
+{
+    content: "";
+    background: url("bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+.h-primary
+{
+    padding: 12px;
+    font-size: 2.4rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#home h1
+{
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#home p
+{
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.btn
+{
+    padding: 12px;
+    margin: 12px;
+    font-size: 12px;
+    border:2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.center
+{
+    text-align: center;
+}
+.h-secondary
+{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#services
+{
+    display: flex;
+    margin: 12px;
+}
+#services .box
+{
+    border :2px solid brown;
+    margin:  -7px 12px;
+    border-radius: 23px;
+    background-color: rgb(237, 235, 235);
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin :auto;
+}
+
+.box p
+{
+    font-family: 'Balsamiq Sans', cursive;
+}
+.client-section
+{   margin-top: 50px;
+    height:200px;
+    position: relative;
+}
+.client-section::before
+{
+    content: "";
+    position: absolute;
+    background: url("bg.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.clients
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.clients img
+{
+    height: 100px;
+}
+.client-items
+{
+    padding: 20px;
+}
+#contact
+{
+    position:relative;
+}
+#contact::before
+{
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+    background:url("contact.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1 ;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+}
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+}
+#contact-box input,#contact-box textarea
+{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+#contact-box form
+{
+    width: 40%;
+}
+#contact-box label
+{
+    font-size: 1.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
